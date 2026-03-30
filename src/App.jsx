@@ -1,4 +1,4 @@
-
+import React, { use, useState } from 'react';
 import { Suspense } from 'react'
 import './App.css'
 import Rating from './component/ActivepremiumRating/Rating'
@@ -10,19 +10,16 @@ const data = async()=>{
   const res = await fetch('data.json')
   return res.json();
 }
-
+let cartDatas = data();
 function App() {
-   let cartDatas = data();
+  const [cardArray, setCardArray] = useState([]);
   return (
     <>
-      <Navbar/>
+      <Navbar cardArray={cardArray}/>
       <Banner/>
       <Rating/>
-      <div className='text-center'>
-        <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-        <Toggle cartDatas={cartDatas}/>
-        </Suspense>
-      </div>
+    <Toggle cartDatas={cartDatas} cardArray={cardArray} setCardArray={setCardArray}/>
+        
       
     </>
   )

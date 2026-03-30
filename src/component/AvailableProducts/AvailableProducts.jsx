@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import Featurs from './Featurs/Featurs';
 import { FaCheck } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const AvailableProducts = ({data, cardArray, setCardArray}) => {
    const [isSelected, setIsSelected] = useState(false)
    const selectHandelar =(data)=>{
-      setIsSelected(true);
+      const findProduct = cardArray.find(item => item.id == data.id)
+      if(findProduct){
+        toast.warn('This product is Already added');
+        return;
+      }
       setCardArray([...cardArray, data]);
+      setIsSelected(true);
+      toast.success('This product is Successfully added');
    }
      const {name, period, tag, price, features, description, icon} = data
      const status =()=>{
