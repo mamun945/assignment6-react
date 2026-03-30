@@ -16,11 +16,11 @@ const Banner = () => {
                     <p className='text-purple-500'>New: AI-Powered Tools Available</p>
                     </div>
                     <h1 className='text-3xl md:text-6xl text-center md:text-left font-bold'>Supercharge Your Digital Workflow</h1>
-                    <p>
+                    <div>
                     <p className='text-center md:text-left'>Access premium AI tools, design assets, templates, and productivity</p>
                     <p className='text-center md:text-left'>software—all in one place. Start creating faster today.</p>
                     <p className='text-center md:text-left'>Explore Products</p>
-                    </p>
+                    </div>
                     <div className='flex items-center gap-2'>
                         <button className='btn bg-linear-to-r from-[#652df7] to-[#8e18fa] text-white rounded-full'>Explore Products</button>
                         <button className='btn btn-outline btn-primary rounded-full'><CiPlay1/> Watch Demo</button>

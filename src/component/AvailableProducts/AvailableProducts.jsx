@@ -19,7 +19,7 @@ const AvailableProducts = ({data, cardArray, setCardArray}) => {
       }
      }
     return (
-        <div className='shadow border-1 border-gray-100 p-5 rounded-xl text-left space-y-2 hover:shadow-xl hover:border hover:border-green-500 hover:scale-102 transition-all duration-100'>
+         <div className='shadow border-1 border-gray-100 p-5 rounded-xl text-left space-y-2 hover:shadow-xl hover:border hover:border-green-500 hover:scale-102 transition-all duration-100'>
         <div className='badege text-right'>
           {status()}
         </div> 
