@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Advanced conversational AI for writing, coding, and research.\nSupports multi-turn dialogue and problem-solving.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Natural language chat",
+      "Code generation",
+      "File analysis",
+      "Multi-language support"
+    ],
+    "icon": "https://i.ibb.co.com/VY40RJgH/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "AI-powered image generation tool for creative designs.\nProduces high-quality artistic visuals from prompts.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Text-to-image generation",
+      "High-resolution outputs",
+      "Artistic styles",
+      "Discord-based access"
+    ],
+    "icon": "https://i.ibb.co.com/xq5znDqy/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "AI assistant integrated into workspace for productivity.\nHelps write, summarize, and organize notes.",
+    "price": 8,
+    "period": "on-Time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Content summarization",
+      "AI writing assistant",
+      "Task organization",
+      "Workspace integration"
+    ],
+    "icon": "https://i.ibb.co.com/k6wbDTRW/camera-8775444-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "AI writing assistant for grammar, tone, and clarity.\nImproves communication across platforms.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Grammar correction",
+      "Tone detection",
+      "Plagiarism checker",
+      "Real-time suggestions"
+    ],
+    "icon": "https://i.ibb.co.com/xq2TVMnV/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "AI tool for generating marketing and social media copy.\nFast and easy content creation for businesses.",
+    "price": 0,
+    "period": "on-Time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Ad copy generation",
+      "Social media posts",
+      "Email writing",
+      "Blog ideas"
+    ],
+    "icon": "https://i.ibb.co.com/CsnVQ4xz/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "AI content platform for marketing teams.\nCreates blogs, ads, and SEO-friendly content.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "SEO content generation",
+      "Brand voice control",
+      "Templates library",
+      "Team collaboration"
+    ],
+    "icon": "https://i.ibb.co.com/ymzg272y/social-media.png"
+  }
+]
