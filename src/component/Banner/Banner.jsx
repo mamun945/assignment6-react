@@ -3,7 +3,7 @@ import bannerImg from '../../assets/banner.png'
 import { CiPlay1 } from 'react-icons/ci';
 const Banner = () => {
     return (
-        <div className='container mx-auto my-5'>
+        <div className='container mx-auto my-5 p-4'>
              <div className='flex flex-col md:flex-row gap-5 items-center'>
                 {/* text section  */}
                 <div className='space-y-4 flex flex-col items-center md:items-start'>

@@ -33,7 +33,7 @@ const Toggle = ({cartDatas, cardArray, setCardArray}) => {
           </div>
           </div> 
 
-          <div className='container mx-auto gap-5 grid grid-cols-3 my-5'>
+          <div className='container mx-auto gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-5 p-4'>
             {
              isToggle === 'Products' &&  datas.map(data => <AvailableProducts key={data.id} data={data} cardArray={cardArray} setCardArray={setCardArray}/>)
             }

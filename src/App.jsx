@@ -5,6 +5,7 @@ import Rating from './component/ActivepremiumRating/Rating'
 import Banner from './component/Banner/Banner'
 import Navbar from './component/navbar/Navbar'
 import Toggle from './component/togglingSection/Toggle'
+import Getstarted from './component/GetStartedSection/Getstarted';
 
 const data = async()=>{
   const res = await fetch('data.json')
@@ -19,7 +20,7 @@ function App() {
       <Banner/>
       <Rating/>
     <Toggle cartDatas={cartDatas} cardArray={cardArray} setCardArray={setCardArray}/>
-        
+     <Getstarted/>   
       
     </>
   )
