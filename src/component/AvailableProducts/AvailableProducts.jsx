@@ -4,7 +4,14 @@ import { FaCheck } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 const AvailableProducts = ({data, cardArray, setCardArray}) => {
-   const [isSelected, setIsSelected] = useState(false)
+   let [isSelected, setIsSelected] = useState(false);
+   
+   function hello(){
+    let filterItem = cardArray.filter(item => item.id == data.id);
+    filterItem.forEach(item => isSelected = true);
+   }
+   hello()
+
    const selectHandelar =(data)=>{
       const findProduct = cardArray.find(item => item.id == data.id)
       if(findProduct){
@@ -14,10 +21,8 @@ const AvailableProducts = ({data, cardArray, setCardArray}) => {
       setCardArray([...cardArray, data]);
       if(data){
          setIsSelected(true);
-      }else{
-        setIsSelected(false);
+        //  hello(data);
       }
-      
       toast.success('This product is Successfully added');
    }
      const {name, period, tag, price, features, description, icon} = data
