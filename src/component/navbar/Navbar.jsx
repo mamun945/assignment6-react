@@ -3,7 +3,7 @@ import { CiShoppingCart } from 'react-icons/ci';
 
 const Navbar = ({cardArray}) => {
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto sticky top-0 z-10'>
             <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
                 <div className="dropdown">
@@ -34,7 +34,7 @@ const Navbar = ({cardArray}) => {
             <div className="navbar-end flex items-center gap-4">
                 <a href="" className='relative'>
                     <CiShoppingCart className='text-4xl'/>
-                    <span className='absolute text-red-500 text-sm top-[8px] left-[15px] font-bold'>{cardArray.length ? cardArray.length : ""}</span>
+                    <span className='absolute text-red-500 text-sm top-[5px] left-[20px] font-bold'>{cardArray.length ? <span className='h-[15px] w-[15px] bg-red-500 text-white rounded-full flex justify-center items-center'>{cardArray.length}</span>  : ""}</span>
                 </a>
                 <a href="">Login</a>
                 <a className="btn rounded-full bg-linear-to-r from-[#652df7] to-[#8e18fa] text-white">Get Started</a>

@@ -22,7 +22,7 @@ const AvailableProducts = ({data, cardArray, setCardArray}) => {
       }else if(tag === 'best seller'){
         return <div className='badge badge-soft bg-orange-200 text-orange-500'>Best Seller</div>
       }else if(tag === 'new'){
-        return <div className='badge badge-soft bg-green-200 text-green-500'>Best Seller</div>
+        return <div className='badge badge-soft bg-green-200 text-green-500'>New</div>
       }
      }
     return (
