@@ -19,10 +19,8 @@ const AvailableProducts = ({data, cardArray, setCardArray}) => {
         return;
       }
       setCardArray([...cardArray, data]);
-      if(data){
+      
          setIsSelected(true);
-        //  hello(data);
-      }
       toast.success('This product is Successfully added');
    }
      const {name, period, tag, price, features, description, icon} = data
