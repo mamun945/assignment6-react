@@ -12,7 +12,12 @@ const AvailableProducts = ({data, cardArray, setCardArray}) => {
         return;
       }
       setCardArray([...cardArray, data]);
-      setIsSelected(true);
+      if(data){
+         setIsSelected(true);
+      }else{
+        setIsSelected(false);
+      }
+      
       toast.success('This product is Successfully added');
    }
      const {name, period, tag, price, features, description, icon} = data
@@ -35,7 +40,7 @@ const AvailableProducts = ({data, cardArray, setCardArray}) => {
         <p className='line-clamp-2'>{description}</p>
         <div className='flex items-center'><p className='font-bold text-xl'>${price}</p>/{period}</div>
         <div className='ml-5'>
-            {
+            {            
               features.map( (item, ind) =>(
                 <Featurs key={ind} item={item}/>
               ) ) 
